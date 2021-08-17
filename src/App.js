@@ -1,4 +1,5 @@
 
+import './fonts.css'
 import './App.scss';
 import { navBar } from './NavBar/NavBar.js'
 import { hero } from './Hero/Hero.js'
@@ -10,8 +11,6 @@ function App() {
     <div className='app'>
     {navBar()}
     {hero()}
-    {widget()}
-    {widget()}
     {widget()}
     </div>
   );
