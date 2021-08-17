@@ -1,7 +1,9 @@
 export const widget = () => {
     return (
         <div className='widget'>
-            <p>Widget</p>
+            <p>Control bar</p>
+            <p>Keyboard section</p>
+            <p>Note section</p>
         </div>
     )
 

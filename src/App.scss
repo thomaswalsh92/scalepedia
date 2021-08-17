@@ -48,11 +48,17 @@ body {
   }
 }
 
+.main {
+  overflow: auto;
+}
+
 .widget {
-  margin: 2rem 1rem;
   background-color: $lightPurple;
   border-radius: 1rem;
   height: 10rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   p {
     color: $lightBlue;
   }
