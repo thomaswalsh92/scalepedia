@@ -3,7 +3,7 @@ import './fonts.css'
 import './App.scss';
 import { navBar } from './NavBar/NavBar.js'
 import { hero } from './Hero/Hero.js'
-import { main } from './Main/Main.js'
+import { widget } from './Widget/Widget';
 
 
 function App() {
@@ -11,7 +11,9 @@ function App() {
     <div className='app'>
     {navBar()}
     {hero()}
-    {main()}
+      <div className='main'>
+      {widget()}
+      </div>
     </div>
   );
 }
