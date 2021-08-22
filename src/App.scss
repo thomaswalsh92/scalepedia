@@ -17,7 +17,6 @@ body {
     font-size:16px;
     color: $darkPurple;
   }
-
 }
 
 .navbar {
@@ -60,6 +59,12 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
   p {
+    color: $lightBlue;
+  }
+
+  label {
+    font-family: Zilla Slab;
+    font-size:16px;
     color: $lightBlue;
   }
 }

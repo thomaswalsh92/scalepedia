@@ -1,7 +1,9 @@
+import { controlBar } from './ControlBar.js'
+
 export const widget = () => {
     return (
         <div className='widget'>
-            <p>Control bar</p>
+            {controlBar()}
             <p>Keyboard section</p>
             <p>Note section</p>
         </div>
