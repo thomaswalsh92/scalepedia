@@ -26,6 +26,7 @@ function App() {
     <Hero />
       <div className='main'>
       <Widget rootNote={rootNote} changeRootNote={changeRootNote} scaleType={scaleType} changeScaleType={changeScaleType} />
+      <p>At App.js level the root note is {rootNote} and scale type is {scaleType}.</p>
       </div>
     </div>
   );
