@@ -9,10 +9,10 @@ import { Widget } from './Widget/Widget';
 function App() {
   return (
     <div className='app'>
-    {NavBar()}
-    {Hero()}
+    <NavBar />
+    <Hero />
       <div className='main'>
-      {Widget()}
+      <Widget />
       </div>
     </div>
   );
