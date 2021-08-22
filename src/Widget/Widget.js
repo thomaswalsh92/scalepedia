@@ -1,4 +1,4 @@
-import { controlBar } from './ControlBar.js'
+import { controlBar } from './controlBar.js'
 
 export const widget = () => {
     return (

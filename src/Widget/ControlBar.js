@@ -1,11 +1,11 @@
 export const controlBar = () => {
     return (
-        <div className='control-bar'>
+        <div className='controlBar'>
             <label for='root'>Root</label>
-            <select name='root' className='root-select'>
+            <select name='root' className='rootSelect'>
             </select>
             <label for='scale'>Scale</label>
-            <select name='scale' className='scale-select'>
+            <select name='scale' className='scaleSelect'>
             </select>
         </div>
     )
