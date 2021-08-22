@@ -1,4 +1,4 @@
-export const noteSection = () => {
+export const NoteSection = () => {
     return (
         <div className='noteSection'>
             <table>

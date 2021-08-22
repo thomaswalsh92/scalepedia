@@ -1,12 +1,12 @@
-import { controlBar } from './controlBar.js'
-import { noteSection } from './noteSection.js'
+import { ControlBar } from './ControlBar.js'
+import { NoteSection } from './NoteSection.js'
 
-export const widget = () => {
+export const Widget = () => {
     return (
         <div className='widget'>
-            {controlBar()}
+            <ControlBar />
             <p>Keyboard section</p>
-            {noteSection()}
+            <NoteSection />
         </div>
     )
 

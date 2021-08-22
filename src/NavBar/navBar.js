@@ -1,7 +1,7 @@
 
-export const navBar = () => {
+export const NavBar = () => {
     return (
-        <div className='navBar'>
+        <div className='NavBar'>
         <p>Scalepedia</p>
         <button>Hamburger Menu</button>
         </div>

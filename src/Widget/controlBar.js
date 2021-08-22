@@ -1,4 +1,4 @@
-export const controlBar = () => {
+export const ControlBar = () => {
     return (
         <div className='controlBar'>
             <label for='root'>Root</label>

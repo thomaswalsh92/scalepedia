@@ -1,18 +1,18 @@
 
 import './fonts.css'
 import './App.scss';
-import { navBar } from './NavBar/navBar.js'
-import { hero } from './Hero/hero.js'
-import { widget } from './Widget/widget';
+import { NavBar } from './NavBar/NavBar.js'
+import { Hero } from './Hero/Hero.js'
+import { Widget } from './Widget/Widget';
 
 
 function App() {
   return (
     <div className='app'>
-    {navBar()}
-    {hero()}
+    {NavBar()}
+    {Hero()}
       <div className='main'>
-      {widget()}
+      {Widget()}
       </div>
     </div>
   );
