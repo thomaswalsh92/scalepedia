@@ -6,6 +6,7 @@ export const Widget = (props) => {
         <div className='widget'>
             <ControlBar rootNote={props.rootNote} changeRootNote={props.changeRootNote} scaleType={props.scaleType} changeScaleType={props.changeScaleType} />
             <p>This is the widget section and root note is: {props.rootNote}, the scale type is {props.scaleType}.</p>
+            <NoteSection rootNote={props.rootNote} scaleType={props.scaleType} />
         </div>
     )
 

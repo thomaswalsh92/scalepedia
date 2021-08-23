@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import { NavBar } from './NavBar/NavBar.js'
 import { Hero } from './Hero/Hero.js'
 import { Widget } from './Widget/Widget';
+import { intervalLookup } from './utilities.js'
+
 
 
 function App() {
