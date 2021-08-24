@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { NavBar } from './NavBar/NavBar.js'
 import { Hero } from './Hero/Hero.js'
 import { Widget } from './Widget/Widget';
-import { intervalLookup } from './utilities.js'
+import { intervalLookup } from './utilities/intervalLookup.js'
 
 
 
@@ -22,6 +22,12 @@ function App() {
     setScaleType(newScaleType);
   }
 
+  function getIntervals (scaleType) {
+    return intervalLookup (scaleType)
+  }
+
+  let intervals = getIntervals(scaleType)
+
   return (
     <div className='app'>
     <NavBar />
@@ -29,6 +35,8 @@ function App() {
       <div className='main'>
       <Widget rootNote={rootNote} changeRootNote={changeRootNote} scaleType={scaleType} changeScaleType={changeScaleType} />
       <p>At App.js level the root note is {rootNote} and scale type is {scaleType}.</p>
+      <p>The interval data is {intervals}</p>
+      <p></p>
       </div>
     </div>
   );
