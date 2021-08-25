@@ -1,1 +1,0 @@
-// this module will when provided a root note number and  a scale type, produce an array of values corresponding to the notes in that scale. 

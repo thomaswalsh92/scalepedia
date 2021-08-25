@@ -1,10 +1,10 @@
 export const intervalLookup = (scaleType) => {
     const intervalTable = [
         { scaleType: 'major', 
-          intervals: [2, 2, 1, 2, 2, 2, 1]
+          intervals: [0, 2, 2, 1, 2, 2, 2, 1]
         },
         { scaleType: 'minor', 
-          intervals: [2, 1, 2, 2, 2, 1, 2]
+          intervals: [0, 2, 1, 2, 2, 2, 1, 2]
         },
     ]
     for (const i in intervalTable) {

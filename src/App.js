@@ -6,6 +6,7 @@ import { NavBar } from './NavBar/NavBar.js'
 import { Hero } from './Hero/Hero.js'
 import { Widget } from './Widget/Widget';
 import { intervalLookup } from './utilities/intervalLookup.js'
+import { noteNumberLookup } from './utilities/noteNumberLookup.js'
 
 function App() {
   const initRootNote = 'C'
@@ -23,6 +24,8 @@ function App() {
     setScaleType(newScaleType);
     setScaleIntervals(intervalLookup(newScaleType));
   }
+
+  useEffect(() => console.log (noteNumberLookup(0, scaleIntervals)),);
 
   return (
     <div className='app'>
