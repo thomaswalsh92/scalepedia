@@ -1,5 +1,5 @@
 export const intervalLookup = (scaleType) => {
-    const intervalLookup = [
+    const intervalTable = [
         { scaleType: 'major', 
           intervals: [2, 2, 1, 2, 2, 2, 1]
         },
@@ -7,9 +7,10 @@ export const intervalLookup = (scaleType) => {
           intervals: [2, 1, 2, 2, 2, 1, 2]
         },
     ]
-    for (const i in intervalLookup) {
-        if (scaleType === intervalLookup[i].scaleType) {
-            return intervalLookup[i].intervals
+    for (const i in intervalTable) {
+        if (scaleType === intervalTable[i].scaleType) {
+            return intervalTable[i].intervals
         }
     }
 }
+

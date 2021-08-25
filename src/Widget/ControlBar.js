@@ -12,13 +12,18 @@ export const ControlBar = (props) => {
         <div className='controlBar'>
             <label for='root'>Root</label>
             <select name={props.rootNote}  onChange={changeRootNote} className='rootSelect'>
-                <option value='C'>C</option>
-                <option value='D'>D</option>
-                <option value='E'>E</option>
-                <option value='F'>F</option>
-                <option value='G'>G</option>
-                <option value='A'>A</option>
-                <option value='B'>B</option>
+                <option value='0'>C</option>
+                <option value='1'>C#/Ab</option>
+                <option value='2'>D</option>
+                <option value='3'>D#/Eb</option>
+                <option value='4'>E</option>
+                <option value='5'>F</option>
+                <option value='6'>F#/Gb</option>
+                <option value='7'>G</option>
+                <option value='8'>D#/Ab</option>
+                <option value='9'>A</option>
+                <option value='10'>A#/Bb</option>
+                <option value='11'>B</option>
             </select>
             <label for='scale'>Scale</label>
             <select name={props.scaleType} onChange={changeScaleType} className='scaleSelect'>
