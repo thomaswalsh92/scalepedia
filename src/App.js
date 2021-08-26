@@ -8,18 +8,18 @@ import { Widget } from './Widget/Widget';
 import { intervalLookup } from './utilities/intervalLookup.js'
 import { noteNumberLookup } from './utilities/noteNumberLookup.js'
 
-function App() {
+//Initial variables required to ensure app loads with required data. Dirty but works. 
+const initRootNote = 0
+const initScaleType = 'major'
+const initScaleIntervals = intervalLookup(initScaleType)
+const initNoteNumbers = noteNumberLookup(initRootNote, initScaleIntervals)
 
-  //Initial variables required to ensure app loads with required data. Dirty but works. 
-  const initRootNote = 0
-  const initScaleType = 'major'
-  const initScaleIntervals = intervalLookup(initScaleType)
-  const initNoteNumbers = noteNumberLookup(initRootNote, initScaleIntervals)
+function App() {
 
   const [rootNote, setRootNote ] = React.useState(initRootNote)
   const [scaleType, setScaleType ] = React.useState(initScaleType)
   const [scaleIntervals, setScaleIntervals ] = React.useState(initScaleIntervals)
-  //const [noteNumbers, setNoteNumbers ] = React.useState(initNoteNumbers)
+  const [noteNumbers, setNoteNumbers ] = React.useState(initNoteNumbers)
   
   function changeRootNote(newRootNote) {
     setRootNote(newRootNote);
@@ -29,8 +29,12 @@ function App() {
     setScaleType(newScaleType);
   }
 
-  function changeScaleIntervals (newScaleIntervals) {
-    setScaleIntervals(intervalLookup(newScaleIntervals));
+  function changeScaleIntervals (newRootNote) {
+    setScaleIntervals(intervalLookup(newRootNote));
+  }
+
+  function changeNoteNumbers (newRootNote, newScaleIntervals) {
+    setNoteNumbers(noteNumberLookup(newRootNote, newScaleIntervals))
   }
 
   return (
@@ -45,10 +49,12 @@ function App() {
       changeScaleType={changeScaleType} 
       scaleIntervals={scaleIntervals}
       changeScaleIntervals={changeScaleIntervals}
+      noteNumbers={noteNumbers}
+      changeNoteNumbers={changeNoteNumbers}
       />
       <p>At App.js level the root note is {rootNote} and scale type is {scaleType}.</p>
       <p>The interval data is: {scaleIntervals}.</p>
-      <p>The note numbers are.</p>
+      <p>The note numbers are {noteNumbers}.</p>
       </div>
     </div>
   );
