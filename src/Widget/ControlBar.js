@@ -6,6 +6,7 @@ export const ControlBar = (props) => {
 
     function changeScaleType(event) {
         props.changeScaleType(event.target.value) 
+        props.changeScaleIntervals(event.target.value)
     }
 
     return (

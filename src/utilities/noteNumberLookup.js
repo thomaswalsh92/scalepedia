@@ -7,6 +7,7 @@ export const noteNumberLookup = (rootNote, scaleIntervals) => {
     for (let i in scaleIntervals) {
         accumulator += scaleIntervals[i]
         noteNumbers.push(rootNote + accumulator)
+        console.log (`Root note is: ${rootNote}, accumulator is ${accumulator}, notenumbers current state is ${noteNumbers}.`)
     }
     return noteNumbers
 }
