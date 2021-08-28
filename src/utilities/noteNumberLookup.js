@@ -6,8 +6,8 @@ export const noteNumberLookup = (rootNote, scaleIntervals) => {
     let noteNumbers = []
     let accumulator = 0
     for (let i in scaleIntervals) {
-        accumulator += scaleIntervals[i]
-        noteNumbers.push(rootNote + accumulator)
+        accumulator += parseInt(scaleIntervals[i])
+        noteNumbers.push((parseInt(rootNote) + accumulator) % 12)
     }
     return noteNumbers
 };
