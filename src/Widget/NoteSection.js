@@ -35,14 +35,14 @@ export const NoteSection = (props) => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{noteNumberToLetter(noteNumbers[0])}</td>
-                        <td>{noteNumberToLetter(noteNumbers[1])}</td>
-                        <td>{noteNumberToLetter(noteNumbers[2])}</td>
-                        <td>{noteNumberToLetter(noteNumbers[3])}</td>
-                        <td>{noteNumberToLetter(noteNumbers[4])}</td>
-                        <td>{noteNumberToLetter(noteNumbers[5])}</td>
-                        <td>{noteNumberToLetter(noteNumbers[6])}</td>
-                        <td>{noteNumberToLetter(noteNumbers[7])}</td>
+                        <td>{noteNumberToLetter(noteNumbers[0], props.showAs)}</td>
+                        <td>{noteNumberToLetter(noteNumbers[1], props.showAs)}</td>
+                        <td>{noteNumberToLetter(noteNumbers[2], props.showAs)}</td>
+                        <td>{noteNumberToLetter(noteNumbers[3], props.showAs)}</td>
+                        <td>{noteNumberToLetter(noteNumbers[4], props.showAs)}</td>
+                        <td>{noteNumberToLetter(noteNumbers[5], props.showAs)}</td>
+                        <td>{noteNumberToLetter(noteNumbers[6], props.showAs)}</td>
+                        <td>{noteNumberToLetter(noteNumbers[7], props.showAs)}</td>
                     </tr>
                 </tbody>
             </table>

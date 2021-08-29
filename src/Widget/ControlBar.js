@@ -18,16 +18,16 @@ export const ControlBar = (props) => {
             <label htmlFor='root'>Root</label>
             <select name={props.rootNote}  onChange={changeRootNote} className='rootSelect'>
                 <option value='0'>C</option>
-                <option value='1'>Db/C#</option>
+                <option value='1'>{(props.showAs === 'flat') ? 'Db' : 'C#'}</option>
                 <option value='2'>D</option>
-                <option value='3'>Eb/D#</option>
+                <option value='3'>{(props.showAs === 'flat') ? 'Eb' : 'D#'}</option>
                 <option value='4'>E</option>
                 <option value='5'>F</option>
-                <option value='6'>Gb/F#</option>
+                <option value='6'>{(props.showAs === 'flat')  ? 'Gb' : 'F#'}</option>
                 <option value='7'>G</option>
-                <option value='8'>Ab/G#</option>
+                <option value='8'>{(props.showAs === 'flat')  ? 'Ab' : 'G#'}</option>
                 <option value='9'>A</option>
-                <option value='10'>Bb/A#</option>
+                <option value='10'>{(props.showAs === 'flat')  ? 'Bb' : 'A#'}</option>
                 <option value='11'>B</option>
             </select>
             <label htmlFor='scale'>Scale</label>

@@ -11,13 +11,14 @@ import { intervalLookup } from './utilities/intervalLookup.js'
 const initRootNote = 0
 const initScaleType = 'major'
 const initScaleIntervals = intervalLookup(initScaleType)
+const initShowAs = 'flat'
 
 function App() {
 
   const [rootNote, setRootNote ] = React.useState(initRootNote)
   const [scaleType, setScaleType ] = React.useState(initScaleType)
   const [scaleIntervals, setScaleIntervals ] = React.useState(initScaleIntervals)
-  const [showAs, setShowAs ] = React.useState(initScaleIntervals)
+  const [showAs, setShowAs ] = React.useState(initShowAs)
   
   function changeRootNote(newRootNote) {
     setRootNote(newRootNote);
