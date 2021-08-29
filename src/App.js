@@ -17,6 +17,7 @@ function App() {
   const [rootNote, setRootNote ] = React.useState(initRootNote)
   const [scaleType, setScaleType ] = React.useState(initScaleType)
   const [scaleIntervals, setScaleIntervals ] = React.useState(initScaleIntervals)
+  const [showAs, setShowAs ] = React.useState(initScaleIntervals)
   
   function changeRootNote(newRootNote) {
     setRootNote(newRootNote);
@@ -28,6 +29,10 @@ function App() {
 
   function changeScaleIntervals (newRootNote) {
     setScaleIntervals(intervalLookup(newRootNote));
+  }
+
+  function changeShowAs (newShowAs) {
+    setShowAs(newShowAs);
   }
 
 
@@ -43,6 +48,8 @@ function App() {
       changeScaleType={changeScaleType} 
       scaleIntervals={scaleIntervals}
       changeScaleIntervals={changeScaleIntervals}
+      showAs={showAs}
+      changeShowAs={changeShowAs}
       />
       <p>At App.js level the root note is {rootNote} and scale type is {scaleType}.</p>
       <p>The interval data is: {scaleIntervals}.</p>

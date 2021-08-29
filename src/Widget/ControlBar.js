@@ -9,6 +9,10 @@ export const ControlBar = (props) => {
         props.changeScaleIntervals(event.target.value)
     }
 
+    function changeShowAs(event) {
+        props.changeShowAs(event.target.value)
+    }
+
     return (
         <div className='controlBar'>
             <label htmlFor='root'>Root</label>
@@ -30,6 +34,11 @@ export const ControlBar = (props) => {
             <select name={props.scaleType} onChange={changeScaleType} className='scaleSelect'>
                 <option value='major'>Major</option>
                 <option value='minor'>Minor</option>
+            </select>
+            <label htmlFor='show-as'>Show as</label>
+            <select name={props.showAs} onChange={changeShowAs} className='showAsSelect'>
+                <option value='flat'>Flat</option>
+                <option value='sharp'>Sharp</option>
             </select>
         </div>
     );
