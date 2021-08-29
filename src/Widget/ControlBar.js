@@ -2,13 +2,11 @@ export const ControlBar = (props) => {
 
     function changeRootNote(event) {
         props.changeRootNote(event.target.value) 
-        props.changeNoteNumbers(event.target.value, props.scaleIntervals)
     }
 
     function changeScaleType(event) {
         props.changeScaleType(event.target.value) 
         props.changeScaleIntervals(event.target.value)
-        props.changeNoteNumbers(props.rootNote, props.scaleIntervals)
     }
 
     return (
