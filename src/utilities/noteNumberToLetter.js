@@ -7,25 +7,25 @@ export const noteNumberToLetter = (noteNumber, showAs) => {
             case 0:
                 return 'C';
             case 1:
-                return 'Db'
+                return 'D♭'
             case 2:
                 return 'D';
             case 3:
-                return 'Eb';
+                return 'E♭';
             case 4:
                 return 'E';
             case 5:
                 return 'F';
             case 6:
-                return 'Gb';
+                return 'G♭';
             case 7:
                 return 'G';
             case 8:
-                return 'Ab';
+                return 'A♭';
             case 9:
                 return 'A';
             case 10:
-                return 'Bb';
+                return 'B♭';
             case 11:
                 return 'B';
             default:
@@ -36,25 +36,25 @@ export const noteNumberToLetter = (noteNumber, showAs) => {
             case 0:
                 return 'C';
             case 1:
-                return 'C#'
+                return 'C♯'
             case 2:
                 return 'D';
             case 3:
-                return 'D#';
+                return 'D♯';
             case 4:
                 return 'E';
             case 5:
                 return 'F';
             case 6:
-                return 'F#';
+                return 'F♯';
             case 7:
                 return 'G';
             case 8:
-                return 'G#';
+                return 'G♯';
             case 9:
                 return 'A';
             case 10:
-                return 'A#';
+                return 'A♯';
             case 11:
                 return 'B';
             default:
@@ -62,6 +62,5 @@ export const noteNumberToLetter = (noteNumber, showAs) => {
             };
     } else {
         console.log('Invalid noteNumber value.');
-    }
-    
+    };
 };

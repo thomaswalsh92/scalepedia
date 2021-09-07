@@ -42,7 +42,6 @@ export const NoteSection = (props) => {
                         <td>{noteNumberToLetter(noteNumbers[4], props.showAs)}</td>
                         <td>{noteNumberToLetter(noteNumbers[5], props.showAs)}</td>
                         <td>{noteNumberToLetter(noteNumbers[6], props.showAs)}</td>
-                        <td>{noteNumberToLetter(noteNumbers[7], props.showAs)}</td>
                     </tr>
                 </tbody>
             </table>
