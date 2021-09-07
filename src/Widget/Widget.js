@@ -1,4 +1,5 @@
 import { ControlBar } from './ControlBar.js'
+import { Keyboard } from './Keyboard.js'
 import { NoteSection } from './NoteSection.js'
 
 export const Widget = (props) => {
@@ -13,12 +14,12 @@ export const Widget = (props) => {
             changeScaleIntervals={props.changeScaleIntervals}
             showAs={props.showAs}
             changeShowAs={props.changeShowAs} />
-            <p>This is the widget section and root note is: {props.rootNote}, the scale type is {props.scaleType} and the intervals data is {props.scaleIntervals}. The note numbers are {props.noteNumbers}.</p>
-            <NoteSection 
+            {/* <NoteSection 
             rootNote={props.rootNote}
             scaleIntervals={props.scaleIntervals} 
             showAs={props.showAs}
-            />
+            /> */}
+            <Keyboard length="12"/>
         </div>
     );
 };

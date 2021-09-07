@@ -1,5 +1,4 @@
 export const intervalLookup = (scaleType) => {
-    console.log (`intervalLookup being called with ${scaleType}`)
     const intervalTable = [
         { scaleType: 'major', 
           intervals: [0, 2, 2, 1, 2, 2, 2]

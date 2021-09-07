@@ -52,8 +52,6 @@ function App() {
       showAs={showAs}
       changeShowAs={changeShowAs}
       />
-      <p>At App.js level the root note is {rootNote} and scale type is {scaleType}.</p>
-      <p>The interval data is: {scaleIntervals}.</p>
       </div>
     </div>
   );
