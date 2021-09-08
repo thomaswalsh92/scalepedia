@@ -19,15 +19,15 @@ export const Widget = (props) => {
             changeScaleIntervals={props.changeScaleIntervals}
             showAs={props.showAs}
             changeShowAs={props.changeShowAs} />
-            {/* <NoteSection 
-            showAs={props.showAs}
-            noteNumbers={noteNumbers}
-            /> */}
             <Keyboard 
             length="24" 
             noteNumbers={noteNumbers} 
             showAs={props.showAs}
             />
+            {<NoteSection 
+            showAs={props.showAs}
+            noteNumbers={noteNumbers}
+            /> }
         </div>
     );
 };

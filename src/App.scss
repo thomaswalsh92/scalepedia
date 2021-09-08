@@ -27,7 +27,7 @@ body {
   table {
     font-family: Zilla Slab;
     font-size:16px;
-    color: $lightBlue;
+    color: $darkPurple;
   }
 }
 
@@ -86,20 +86,22 @@ body {
 .keyboard {
 
   display: grid;
-  grid-template-columns: repeat(24, 1fr) ;
+  grid-template-columns: repeat(84, 1fr) ;
+  grid-template-rows: repeat(3, 1fr) ;
   justify-content: space-between;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
+  height: 4rem;
 
 }
 
 .keyboardNoteWhite {
   box-sizing: border-box;
   background-color: $lightBlue;
-  height: 45px;
-  width: auto;
-  border: 1px solid $darkPurple;
+  height: auto;
+  width: 100%;
+
   p {
     color: $darkPurple;
   }
@@ -109,12 +111,12 @@ body {
 .keyboardNoteBlack {
   box-sizing: border-box;
   background-color: $lightPurple;
-  height: 45px;
-  width: auto;
-  border: 1px solid $darkPurple;
+  height: auto;
+  width: 100%;
   p {
     color: $lightBlue;
   }
+  z-index: 10;
 }
 
 .keyboardNoteHighlight {
@@ -123,10 +125,14 @@ body {
   padding-bottom: 80%;
   border-radius: 50%;
   margin: auto;
-  margin-top: 100%;
+  margin-top: 80%;
+  margin-bottom: 20%;
   opacity: 100%;
 }
 
+.noteSection {
+  margin: 0.5rem;
+}
 
 
 

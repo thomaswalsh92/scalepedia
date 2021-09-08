@@ -18,7 +18,7 @@ body label {
 body table {
   font-family: Zilla Slab;
   font-size: 16px;
-  color: #eaf6ff;
+  color: #0f0f2e;
 }
 
 .navBar {
@@ -60,7 +60,7 @@ body table {
 }
 
 .widget {
-  background-color: #2a2a72;
+  background-color: #009FFD;
   border-radius: 1rem;
   min-height: 10rem;
   margin-top: 2rem;
@@ -72,18 +72,36 @@ body table {
   color: #eaf6ff;
 }
 
+.controlBar {
+  background-color: #2a2a72;
+  overflow: auto;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 0.5rem;
+}
+
 .keyboard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[84];
+      grid-template-columns: repeat(84, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  height: 4rem;
 }
 
 .keyboardNoteWhite {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #eaf6ff;
+  height: auto;
+  width: 100%;
 }
 
 .keyboardNoteWhite p {
@@ -91,10 +109,30 @@ body table {
 }
 
 .keyboardNoteBlack {
-  background-color: #0f0f2e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #2a2a72;
+  height: auto;
+  width: 100%;
+  z-index: 10;
 }
 
 .keyboardNoteBlack p {
   color: #eaf6ff;
+}
+
+.keyboardNoteHighlight {
+  width: 80%;
+  height: 0;
+  padding-bottom: 80%;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 80%;
+  margin-bottom: 20%;
+  opacity: 100%;
+}
+
+.noteSection {
+  margin: 0.5rem;
 }
 /*# sourceMappingURL=App.css.map */
