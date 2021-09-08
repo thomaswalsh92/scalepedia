@@ -93,7 +93,7 @@ body table {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
-  height: 4rem;
+  height: 6rem;
 }
 
 .keyboardNoteWhite {
@@ -102,6 +102,16 @@ body table {
   background-color: #eaf6ff;
   height: auto;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: bottom;
+      -ms-flex-align: bottom;
+          align-items: bottom;
 }
 
 .keyboardNoteWhite p {
@@ -114,6 +124,16 @@ body table {
   background-color: #2a2a72;
   height: auto;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: bottom;
+      -ms-flex-align: bottom;
+          align-items: bottom;
   z-index: 10;
 }
 
@@ -122,13 +142,13 @@ body table {
 }
 
 .keyboardNoteHighlight {
-  width: 80%;
+  width: 60%;
   height: 0;
-  padding-bottom: 80%;
+  padding-bottom: 60%;
   border-radius: 50%;
   margin: auto;
-  margin-top: 80%;
-  margin-bottom: 20%;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
   opacity: 100%;
 }
 

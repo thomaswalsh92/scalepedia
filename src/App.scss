@@ -92,7 +92,7 @@ body {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
-  height: 4rem;
+  height: 6rem;
 
 }
 
@@ -101,7 +101,9 @@ body {
   background-color: $lightBlue;
   height: auto;
   width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  align-items: bottom;
   p {
     color: $darkPurple;
   }
@@ -113,6 +115,9 @@ body {
   background-color: $lightPurple;
   height: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: bottom;
   p {
     color: $lightBlue;
   }
@@ -120,14 +125,15 @@ body {
 }
 
 .keyboardNoteHighlight {
-  width: 80%;
+  width: 60%;
   height: 0;
-  padding-bottom: 80%;
+  padding-bottom: 60%;
   border-radius: 50%;
   margin: auto;
-  margin-top: 80%;
-  margin-bottom: 20%;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
   opacity: 100%;
+  
 }
 
 .noteSection {

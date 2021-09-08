@@ -35,11 +35,11 @@ const KeyboardNote = (props) => {
         className={props.isWhite ? "keyboardNoteWhite" : "keyboardNoteBlack"} 
         style={props.isWhite ? isWhiteLengthStyling : isBlackLengthStyling}
         >
-            {/* <div 
+            { <div 
             className="keyboardNoteHighlight"
             style={isRootStyling}>
             
-            </div> */}
+            </div> }
         </div>
     );
 
