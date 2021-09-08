@@ -2,7 +2,7 @@
 //array of values corresponding to the notes in that scale. 
 
 export const noteNumberLookup = (rootNote, scaleIntervals) => {
-    console.log (`calling noteNumberLook up and the root note is: ${rootNote}, scaleIntervals is ${scaleIntervals}`)
+    //console.log (`calling noteNumberLook up and the root note is: ${rootNote}, scaleIntervals is ${scaleIntervals}`)
     let noteNumbers = []
     let accumulator = 0
     for (let i in scaleIntervals) {

@@ -64,7 +64,7 @@ body {
 }
 
 .widget {
-  background-color: $lightPurple;
+  background-color: $midBlue;
   border-radius: 1rem;
   min-height: 10rem;
   margin-top: 2rem;
@@ -73,6 +73,58 @@ body {
   p {
     color: $lightBlue;
   }
+}
+
+.controlBar {
+  background-color: $lightPurple;
+  overflow: auto;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.keyboard {
+
+  display: grid;
+  grid-template-columns: repeat(24, 1fr) ;
+  justify-content: space-between;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+
+.keyboardNoteWhite {
+  box-sizing: border-box;
+  background-color: $lightBlue;
+  height: 45px;
+  width: auto;
+  border: 1px solid $darkPurple;
+  p {
+    color: $darkPurple;
+  }
+  
+}
+
+.keyboardNoteBlack {
+  box-sizing: border-box;
+  background-color: $lightPurple;
+  height: 45px;
+  width: auto;
+  border: 1px solid $darkPurple;
+  p {
+    color: $lightBlue;
+  }
+}
+
+.keyboardNoteHighlight {
+  width: 80%;
+  height: 0;
+  padding-bottom: 80%;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 100%;
+  opacity: 100%;
 }
 
 

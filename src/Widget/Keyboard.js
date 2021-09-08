@@ -1,34 +1,30 @@
 import { noteNumberToLetter} from '../utilities/noteNumberToLetter.js'
 
 const KeyboardNote = (props) => {
-    let keyColor
-    let isRoot
-    let isScaleNotRoot
-
-    if (props.isWhite === true) {
-        keyColor = 'white'
-    } 
-    else { 
-        keyColor = 'black'
-    }; 
-
+    let isRootStyling = {
+        opacity: '0%',
+        backgroundColor: '$lightBlue'
+    }
+    
     if (props.isRoot === true) {
-        isRoot = 'true'
+        isRootStyling.opacity = '100%'
+        isRootStyling.backgroundColor = '#D34242'
     } 
-    else { 
-        isRoot = 'false'
-    }; 
 
     if (props.isScaleNotRoot === true) {
-        isScaleNotRoot = 'true'
+        isRootStyling.opacity = '100%'
+        isRootStyling.backgroundColor = '#FFA400'
     } 
-    else { 
-        isScaleNotRoot = 'false'
-    }; 
-    
 
     return (
-        <div><p>Note: {noteNumberToLetter(props.noteNumber, props.showAs)} ||  Key Color: {keyColor} ||  Root Note: {isRoot} || Scale Note: {isScaleNotRoot}</p></div>
+        <div 
+        className={props.isWhite ? "keyboardNoteWhite" : "keyboardNoteBlack"}>
+            <div 
+            className="keyboardNoteHighlight"
+            style={isRootStyling}>
+            
+            </div>
+        </div>
     );
 
 }
@@ -52,17 +48,17 @@ export const Keyboard = (props) => {
             isScaleNotRoot: false,
             noteNumber: null
         }
-        noteObject.noteNumber = i
-        if (octaveKeyIsWhite[i] === true) {
+        noteObject.noteNumber = i % 12
+        if (octaveKeyIsWhite[i % 12] === true) {
             noteObject.isWhite = true
         } else {
             noteObject.isWhite = false
         };
         for (let j = 0; j < props.noteNumbers.length; j++) {
-            if (i === props.noteNumbers[j] && j === 0) {
+            if ((i % 12) === props.noteNumbers[j] && j === 0) {
                 noteObject.isRoot = true
             } 
-            else if (i === props.noteNumbers[j]) {
+            else if ((i % 12) === props.noteNumbers[j]) {
                 noteObject.isScaleNotRoot = true
             }
         }
@@ -70,10 +66,8 @@ export const Keyboard = (props) => {
         keyboardNotes.push(noteObject)
     };
 
-    console.log (props.noteNumbers)
-
     return (
-        <div>
+        <div className="keyboard">
             {keyboardNotes.map((keyboardNote, x) => (
             <KeyboardNote 
             key={x} 

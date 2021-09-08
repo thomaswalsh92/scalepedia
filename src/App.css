@@ -1,0 +1,100 @@
+body {
+  min-height: 100vh;
+  background-color: #eaf6ff;
+}
+
+body p {
+  font-family: Zilla Slab;
+  font-size: 16px;
+  color: #0f0f2e;
+}
+
+body label {
+  font-family: Zilla Slab;
+  font-size: 16px;
+  color: #eaf6ff;
+}
+
+body table {
+  font-family: Zilla Slab;
+  font-size: 16px;
+  color: #eaf6ff;
+}
+
+.navBar {
+  background-color: #2a2a72;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navBar p {
+  font-size: 3rem;
+  color: #eaf6ff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.navBar button {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero {
+  background-color: orange;
+  padding: 0.8rem 1rem;
+}
+
+.hero p {
+  font-size: 2.25rem;
+  color: #0f0f2e;
+}
+
+.main {
+  overflow: auto;
+}
+
+.widget {
+  background-color: #2a2a72;
+  border-radius: 1rem;
+  min-height: 10rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.widget p {
+  color: #eaf6ff;
+}
+
+.keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.keyboardNoteWhite {
+  background-color: #eaf6ff;
+}
+
+.keyboardNoteWhite p {
+  color: #0f0f2e;
+}
+
+.keyboardNoteBlack {
+  background-color: #0f0f2e;
+}
+
+.keyboardNoteBlack p {
+  color: #eaf6ff;
+}
+/*# sourceMappingURL=App.css.map */

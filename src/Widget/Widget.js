@@ -19,12 +19,12 @@ export const Widget = (props) => {
             changeScaleIntervals={props.changeScaleIntervals}
             showAs={props.showAs}
             changeShowAs={props.changeShowAs} />
-            <NoteSection 
+            {/* <NoteSection 
             showAs={props.showAs}
             noteNumbers={noteNumbers}
-            />
+            /> */}
             <Keyboard 
-            length="12" 
+            length="24" 
             noteNumbers={noteNumbers} 
             showAs={props.showAs}
             />
