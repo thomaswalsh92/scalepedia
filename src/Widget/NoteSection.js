@@ -1,9 +1,7 @@
-import { noteNumberLookup } from '../utilities/noteNumberLookup.js';
+
 import { noteNumberToLetter} from '../utilities/noteNumberToLetter.js'
 
 export const NoteSection = (props) => {
-
-    const noteNumbers = noteNumberLookup(props.rootNote, props.scaleIntervals)
 
     return (
         <div className='noteSection'>
@@ -35,13 +33,13 @@ export const NoteSection = (props) => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{noteNumberToLetter(noteNumbers[0], props.showAs)}</td>
-                        <td>{noteNumberToLetter(noteNumbers[1], props.showAs)}</td>
-                        <td>{noteNumberToLetter(noteNumbers[2], props.showAs)}</td>
-                        <td>{noteNumberToLetter(noteNumbers[3], props.showAs)}</td>
-                        <td>{noteNumberToLetter(noteNumbers[4], props.showAs)}</td>
-                        <td>{noteNumberToLetter(noteNumbers[5], props.showAs)}</td>
-                        <td>{noteNumberToLetter(noteNumbers[6], props.showAs)}</td>
+                        <td>{noteNumberToLetter(props.noteNumbers[0], props.showAs)}</td>
+                        <td>{noteNumberToLetter(props.noteNumbers[1], props.showAs)}</td>
+                        <td>{noteNumberToLetter(props.noteNumbers[2], props.showAs)}</td>
+                        <td>{noteNumberToLetter(props.noteNumbers[3], props.showAs)}</td>
+                        <td>{noteNumberToLetter(props.noteNumbers[4], props.showAs)}</td>
+                        <td>{noteNumberToLetter(props.noteNumbers[5], props.showAs)}</td>
+                        <td>{noteNumberToLetter(props.noteNumbers[6], props.showAs)}</td>
                     </tr>
                 </tbody>
             </table>

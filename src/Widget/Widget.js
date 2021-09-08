@@ -1,8 +1,13 @@
 import { ControlBar } from './ControlBar.js'
 import { Keyboard } from './Keyboard.js'
 import { NoteSection } from './NoteSection.js'
+import { noteNumberLookup } from '../utilities/noteNumberLookup.js';
+
+
 
 export const Widget = (props) => {
+    const noteNumbers = noteNumberLookup(props.rootNote, props.scaleIntervals)
+
     return (
         <div className='widget'>
             <ControlBar 
@@ -14,12 +19,15 @@ export const Widget = (props) => {
             changeScaleIntervals={props.changeScaleIntervals}
             showAs={props.showAs}
             changeShowAs={props.changeShowAs} />
-            {/* <NoteSection 
-            rootNote={props.rootNote}
-            scaleIntervals={props.scaleIntervals} 
+            <NoteSection 
             showAs={props.showAs}
-            /> */}
-            <Keyboard length="12"/>
+            noteNumbers={noteNumbers}
+            />
+            <Keyboard 
+            length="12" 
+            noteNumbers={noteNumbers} 
+            showAs={props.showAs}
+            />
         </div>
     );
 };
