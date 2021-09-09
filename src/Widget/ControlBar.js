@@ -32,8 +32,19 @@ export const ControlBar = (props) => {
             </select>
             <label htmlFor='scale'>Scale</label>
             <select name={props.scaleType} onChange={changeScaleType} className='scaleSelect'>
+                <optgroup label='Standard'>
                 <option value='major'>Major</option>
                 <option value='minor'>Minor</option>
+                </optgroup>
+                <optgroup label='Modes'>
+                <option value='ionian'>Ionian</option>
+                <option value='dorian'>Dorian</option>
+                <option value='phyrgian'>Phrygian</option>
+                <option value='lydian'>Lydian</option>
+                <option value='mixolydian'>Mixolydian</option>
+                <option value='aeolian'>Aeolian</option>
+                <option value='locrian'>Locrian</option>
+                </optgroup>
             </select>
             <label htmlFor='show-as'>Show as</label>
             <select name={props.showAs} onChange={changeShowAs} className='showAsSelect'>
