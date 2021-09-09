@@ -5,44 +5,40 @@ export const NoteSection = (props) => {
 
     return (
         <div className='noteSection'>
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Root
-                        </th>
-                        <th>
-                            2nd
-                        </th>
-                        <th>
-                            3rd
-                        </th>
-                        <th>
-                            4th
-                        </th>
-                        <th>
-                            5th
-                        </th>
-                        <th>
-                            6th
-                        </th>
-                        <th>
-                            7th
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{noteNumberToLetter(props.noteNumbers[0], props.showAs)}</td>
-                        <td>{noteNumberToLetter(props.noteNumbers[1], props.showAs)}</td>
-                        <td>{noteNumberToLetter(props.noteNumbers[2], props.showAs)}</td>
-                        <td>{noteNumberToLetter(props.noteNumbers[3], props.showAs)}</td>
-                        <td>{noteNumberToLetter(props.noteNumbers[4], props.showAs)}</td>
-                        <td>{noteNumberToLetter(props.noteNumbers[5], props.showAs)}</td>
-                        <td>{noteNumberToLetter(props.noteNumbers[6], props.showAs)}</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className='noteSectionTable'>
+                <div className="tableHeader">
+                    <div className="rootNote">
+                        <p>Rt.</p>
+                    </div>
+                    <div className="scaleNote">
+                        <p>2nd</p>
+                    </div>
+                    <div className="scaleNote">
+                        <p>3rd</p>
+                    </div>
+                    <div className="scaleNote">
+                        <p>4th</p>
+                    </div>
+                    <div className="scaleNote">
+                        <p>5th</p>
+                    </div>
+                    <div className="scaleNote">
+                        <p>6th</p>
+                    </div>
+                    <div className="scaleNote">
+                        <p>7th</p>
+                    </div>
+                </div>
+                <div className="tableData">
+                    <div><p>{noteNumberToLetter(props.noteNumbers[0], props.showAs)}</p></div>
+                    <div><p>{noteNumberToLetter(props.noteNumbers[1], props.showAs)}</p></div>
+                    <div><p>{noteNumberToLetter(props.noteNumbers[2], props.showAs)}</p></div>
+                    <div><p>{noteNumberToLetter(props.noteNumbers[3], props.showAs)}</p></div>
+                    <div><p>{noteNumberToLetter(props.noteNumbers[4], props.showAs)}</p></div>
+                    <div><p>{noteNumberToLetter(props.noteNumbers[5], props.showAs)}</p></div>
+                    <div><p>{noteNumberToLetter(props.noteNumbers[6], props.showAs)}</p></div>
+                </div>
+            </div>
         </div>
       );
 };

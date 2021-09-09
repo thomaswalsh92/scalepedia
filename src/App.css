@@ -3,7 +3,7 @@ body {
   background-color: #eaf6ff;
 }
 
-body p {
+body p, body div {
   font-family: Zilla Slab;
   font-size: 16px;
   color: #0f0f2e;
@@ -19,6 +19,9 @@ body table {
   font-family: Zilla Slab;
   font-size: 16px;
   color: #0f0f2e;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .navBar {
@@ -66,6 +69,7 @@ body table {
   margin-top: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .widget p {
@@ -80,11 +84,19 @@ body table {
   padding: 0.5rem;
 }
 
+.controlBar select {
+  font-size: 0.8rem;
+}
+
+.controlBar label {
+  font-size: 0.8rem;
+}
+
 .keyboard {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[84];
-      grid-template-columns: repeat(84, 1fr);
+  -ms-grid-columns: (1fr)[83];
+      grid-template-columns: repeat(83, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
   -webkit-box-pack: justify;
@@ -93,7 +105,7 @@ body table {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
-  height: 6rem;
+  height: 8rem;
 }
 
 .keyboardNoteWhite {
@@ -142,9 +154,9 @@ body table {
 }
 
 .keyboardNoteHighlight {
-  width: 60%;
+  width: 0.8rem;
   height: 0;
-  padding-bottom: 60%;
+  padding-bottom: 0.8rem;
   border-radius: 50%;
   margin: auto;
   margin-top: auto;
@@ -154,5 +166,64 @@ body table {
 
 .noteSection {
   margin: 0.5rem;
+  background-color: #009FFD;
+  border-radius: 0.5rem;
+}
+
+.noteSectionTable {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  row-gap: 0.3rem;
+  margin: 0.5rem;
+}
+
+.noteSectionTable p {
+  text-align: center;
+  color: #0f0f2e;
+  margin-top: 0.5rem;
+}
+
+.tableHeader {
+  margin-top: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+}
+
+.tableHeader div {
+  border-radius: 0.25rem;
+  height: 2rem;
+  width: 100%;
+}
+
+.tableData {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -webkit-column-gap: 2%;
+          column-gap: 2%;
+}
+
+.tableData div {
+  height: 2rem;
+  width: 100%;
+  border: 1px solid #eaf6ff;
+  border-radius: 0.25rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.rootNote {
+  background-color: #D34242;
+}
+
+.scaleNote {
+  background-color: #FFA400;
 }
 /*# sourceMappingURL=App.css.map */
