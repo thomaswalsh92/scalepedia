@@ -92,7 +92,7 @@ body table {
 }
 
 .controlBar select {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-right: 0.5rem;
   background-color: #009FFD;
   color: #eaf6ff;
@@ -101,7 +101,7 @@ body table {
 }
 
 .controlBar label {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-right: 0.5rem;
 }
 
