@@ -82,14 +82,23 @@ body {
 .controlBar {
   background-color: $lightPurple;
   overflow: auto;
+  display: flex;
+  justify-content: right;
+  text-align: center;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   padding: 0.5rem;
   select {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    margin-right: 0.5rem;
+    background-color: $midBlue;
+    color: $lightBlue;
+    border: 0;
+    border-radius: 0.125rem;
   }
   label {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    margin-right: 0.5rem;
   }
 }
 

@@ -15,7 +15,6 @@ export const ControlBar = (props) => {
 
     return (
         <div className='controlBar'>
-            <label htmlFor='root'>Root</label>
             <select name={props.rootNote}  onChange={changeRootNote} className='rootSelect'>
                 <option value='0'>C</option>
                 <option value='1'>{(props.showAs === 'flat') ? 'D♭' : 'C♯'}</option>
@@ -30,7 +29,6 @@ export const ControlBar = (props) => {
                 <option value='10'>{(props.showAs === 'flat')  ? 'B♭' : 'A♯'}</option>
                 <option value='11'>B</option>
             </select>
-            <label htmlFor='scale'>Scale</label>
             <select name={props.scaleType} onChange={changeScaleType} className='scaleSelect'>
                 <optgroup label='Standard'>
                 <option value='major'>Major</option>

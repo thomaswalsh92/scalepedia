@@ -79,17 +79,30 @@ body table {
 .controlBar {
   background-color: #2a2a72;
   overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-align: center;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   padding: 0.5rem;
 }
 
 .controlBar select {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  margin-right: 0.5rem;
+  background-color: #009FFD;
+  color: #eaf6ff;
+  border: 0;
+  border-radius: 0.125rem;
 }
 
 .controlBar label {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  margin-right: 0.5rem;
 }
 
 .keyboard {
