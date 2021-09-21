@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { NavBar } from './NavBar/NavBar.js'
 import { Hero } from './Hero/Hero.js'
 import { ScaleWidget } from './Widget/ScaleWidget';
+import { ChordWidget } from './Widget/ChordWidget';
 import { intervalLookup } from './utilities/intervalLookup.js'
 
 //Initial variables required to ensure app loads with required data. Dirty but works. 
@@ -39,10 +40,20 @@ function App() {
 
   return (
     <div className='app'>
-    <NavBar />
-    <Hero />
+      <NavBar />
+      <Hero />
       <div className='main'>
         <ScaleWidget 
+        rootNote={rootNote} 
+        changeRootNote={changeRootNote} 
+        scaleType={scaleType} 
+        changeScaleType={changeScaleType} 
+        scaleIntervals={scaleIntervals}
+        changeScaleIntervals={changeScaleIntervals}
+        showAs={showAs}
+        changeShowAs={changeShowAs}
+        />
+        <ChordWidget 
         rootNote={rootNote} 
         changeRootNote={changeRootNote} 
         scaleType={scaleType} 

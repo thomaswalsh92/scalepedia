@@ -5,21 +5,13 @@ import { noteNumberLookup } from '../utilities/noteNumberLookup.js';
 
 
 
-export const ScaleWidget = (props) => {
+export const ChordWidget = (props) => {
     const noteNumbers = noteNumberLookup(props.rootNote, props.scaleIntervals)
     return (
         <div className='widget'>
             <ControlBar 
-            title={'Scales'}
-            showControls={true}
-            rootNote={props.rootNote} 
-            changeRootNote={props.changeRootNote} 
-            scaleType={props.scaleType} 
-            changeScaleType={props.changeScaleType}
-            scaleIntervals={props.scaleIntervals}
-            changeScaleIntervals={props.changeScaleIntervals}
-            showAs={props.showAs}
-            changeShowAs={props.changeShowAs} />
+            title={'Chord'}
+            />
             <Keyboard 
             length="24" 
             noteNumbers={noteNumbers} 

@@ -16,9 +16,9 @@ export const ControlBar = (props) => {
     return (
         <div className='controlBar'>
             <div className='controlBarTitle'>
-                <p>Scale</p>
+                <p>{props.title}</p>
             </div>
-            <div className='controlBarControls'>
+            <div className={props.showControls ? 'controlBarControls' : 'controlBarControlsHidden'}>
                 <select name={props.rootNote}  onChange={changeRootNote} className='rootSelect'>
                     <option value='0'>C</option>
                     <option value='1'>{(props.showAs === 'flat') ? 'D♭' : 'C♯'}</option>

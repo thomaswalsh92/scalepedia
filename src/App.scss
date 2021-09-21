@@ -111,7 +111,27 @@ body {
     border-radius: 0.125rem;
   }
   label {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.controlBarControlsHidden {
+  display: none;
+  justify-content: right;
+  text-align: center;
+  
+  padding: 0.5rem;
+  select {
     font-size: 0.8rem;
+    margin-right: 0.5rem;
+    background-color: $midBlue;
+    color: $lightBlue;
+    border: 0;
+    border-radius: 0.125rem;
+  }
+  label {
+    font-size: 1rem;
     margin-right: 0.5rem;
   }
 }
