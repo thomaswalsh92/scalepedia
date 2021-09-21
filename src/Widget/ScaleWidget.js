@@ -5,9 +5,8 @@ import { noteNumberLookup } from '../utilities/noteNumberLookup.js';
 
 
 
-export const Widget = (props) => {
+export const ScaleWidget = (props) => {
     const noteNumbers = noteNumberLookup(props.rootNote, props.scaleIntervals)
-
     return (
         <div className='widget'>
             <ControlBar 

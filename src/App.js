@@ -4,7 +4,7 @@ import './App.scss';
 import React, { useEffect, useState } from 'react';
 import { NavBar } from './NavBar/NavBar.js'
 import { Hero } from './Hero/Hero.js'
-import { Widget } from './Widget/Widget';
+import { ScaleWidget } from './Widget/ScaleWidget';
 import { intervalLookup } from './utilities/intervalLookup.js'
 
 //Initial variables required to ensure app loads with required data. Dirty but works. 
@@ -42,16 +42,16 @@ function App() {
     <NavBar />
     <Hero />
       <div className='main'>
-      <Widget 
-      rootNote={rootNote} 
-      changeRootNote={changeRootNote} 
-      scaleType={scaleType} 
-      changeScaleType={changeScaleType} 
-      scaleIntervals={scaleIntervals}
-      changeScaleIntervals={changeScaleIntervals}
-      showAs={showAs}
-      changeShowAs={changeShowAs}
-      />
+        <ScaleWidget 
+        rootNote={rootNote} 
+        changeRootNote={changeRootNote} 
+        scaleType={scaleType} 
+        changeScaleType={changeScaleType} 
+        scaleIntervals={scaleIntervals}
+        changeScaleIntervals={changeScaleIntervals}
+        showAs={showAs}
+        changeShowAs={changeShowAs}
+        />
       </div>
     </div>
   );

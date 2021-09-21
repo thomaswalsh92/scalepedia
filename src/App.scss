@@ -80,13 +80,27 @@ body {
 }
 
 .controlBar {
+  display: flex;
+  justify-content: space-between;
   background-color: $lightPurple;
   overflow: auto;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.controlBarTitle {
+  text-align: center;
+  padding: 0.5rem;
+  p {
+    font-size: 1rem;
+  }
+
+}
+.controlBarControls {
   display: flex;
   justify-content: right;
   text-align: center;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
+  
   padding: 0.5rem;
   select {
     font-size: 0.8rem;
