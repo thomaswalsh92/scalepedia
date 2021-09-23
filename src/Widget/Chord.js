@@ -1,7 +1,21 @@
+import { ChordNoteSection } from "./ChordNoteSection"
+import { ChordKeyboard } from "./ChordKeyboard"
+
 export const Chord = (props) => {
     return (
-        <div>
-            <p>Root is: {props.root}, Third is: {props.third}, Fifth is: {props.fifth}.</p>
+        <div className='chord'>
+            {<ChordKeyboard 
+            length='12'
+            root={props.root} 
+            third={props.third}
+            fifth={props.fifth}
+            />}
+            <ChordNoteSection 
+            showAs={props.showAs}
+            root={props.root} 
+            third={props.third}
+            fifth={props.fifth}
+            />
         </div>
     )
 }

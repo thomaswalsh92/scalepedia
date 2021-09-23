@@ -1,7 +1,7 @@
 //takes a single noteNumber and returns the value as a note Letter
 
 export const noteNumberToLetter = (noteNumber, showAs) => { 
-    //console.log (`the note number is ${noteNumber}, the showAs is ${showAs}`)
+    console.log (`the note number is ${noteNumber}, the showAs is ${showAs}`)
     if (showAs === 'flat') {
         switch (noteNumber) {
             case 0:

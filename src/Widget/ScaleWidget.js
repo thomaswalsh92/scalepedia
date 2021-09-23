@@ -8,7 +8,7 @@ import { noteNumberLookup } from '../utilities/noteNumberLookup.js';
 export const ScaleWidget = (props) => {
     const noteNumbers = noteNumberLookup(props.rootNote, props.scaleIntervals)
     return (
-        <div className='widget'>
+        <div className='widget' id='scale'>
             <ControlBar 
             label={'Scales'}
             showControls={true}
@@ -21,7 +21,6 @@ export const ScaleWidget = (props) => {
             showAs={props.showAs}
             changeShowAs={props.changeShowAs} />
             <ScaleKeyboard 
-            mode='scale'
             length="24" 
             noteNumbers={noteNumbers} 
             showAs={props.showAs}

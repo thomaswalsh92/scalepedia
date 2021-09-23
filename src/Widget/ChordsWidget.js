@@ -19,7 +19,7 @@ export const ChordsWidget = (props) => {
     }
 
     return (
-        <div className='widget'>
+        <div className='widget' id='chords'>
             <ControlBar 
             label={'Chords'}
             showControls={false}

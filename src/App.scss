@@ -194,6 +194,8 @@ body {
   border-radius: 0.5rem;
 }
 
+
+
 .noteSectionTable {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -231,7 +233,15 @@ body {
     border-radius: 0.25rem;
     box-sizing: border-box;
   }
+}
 
+#chords .tableHeader {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#chords .tableData {
+  grid-template-columns: repeat(3, 1fr);
+  
 }
 
 .rootNote {
