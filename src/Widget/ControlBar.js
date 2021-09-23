@@ -16,7 +16,7 @@ export const ControlBar = (props) => {
     return (
         <div className='controlBar'>
             <div className='controlBarTitle'>
-                <p>{props.title}</p>
+                <p>{props.label}</p>
             </div>
             <div className={props.showControls ? 'controlBarControls' : 'controlBarControlsHidden'}>
                 <select name={props.rootNote}  onChange={changeRootNote} className='rootSelect'>

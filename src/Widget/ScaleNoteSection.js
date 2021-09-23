@@ -1,7 +1,7 @@
 
 import { noteNumberToLetter} from '../utilities/noteNumberToLetter.js'
 
-export const NoteSection = (props) => {
+export const ScaleNoteSection = (props) => {
 
     return (
         <div className='noteSection'>

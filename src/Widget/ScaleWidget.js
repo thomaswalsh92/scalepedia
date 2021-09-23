@@ -1,6 +1,6 @@
 import { ControlBar } from './ControlBar.js'
-import { Keyboard } from './Keyboard.js'
-import { NoteSection } from './NoteSection.js'
+import { ScaleKeyboard } from './ScaleKeyboard.js'
+import { ScaleNoteSection } from './ScaleNoteSection.js'
 import { noteNumberLookup } from '../utilities/noteNumberLookup.js';
 
 
@@ -10,7 +10,7 @@ export const ScaleWidget = (props) => {
     return (
         <div className='widget'>
             <ControlBar 
-            title={'Scales'}
+            label={'Scales'}
             showControls={true}
             rootNote={props.rootNote} 
             changeRootNote={props.changeRootNote} 
@@ -20,15 +20,16 @@ export const ScaleWidget = (props) => {
             changeScaleIntervals={props.changeScaleIntervals}
             showAs={props.showAs}
             changeShowAs={props.changeShowAs} />
-            <Keyboard 
+            <ScaleKeyboard 
+            mode='scale'
             length="24" 
             noteNumbers={noteNumbers} 
             showAs={props.showAs}
             />
-            {<NoteSection 
+            <ScaleNoteSection 
             showAs={props.showAs}
             noteNumbers={noteNumbers}
-            /> }
+            /> 
         </div>
     );
 };
