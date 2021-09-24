@@ -21,7 +21,7 @@ export const ChordKeyboard = (props) => {
     let rootPrinted = false;
     let thirdPrinted = false;
     let fifthPrinted = false;
-    //below code loops according to props.length param, and initialises
+    //below code loops according to keyboardLength param, and initialises
     //an empty noteObject which will later be pushed into an array to
     //to be mapped into the keyboard component.
     for (let i = 0; i < keyboardLength; i++) {

@@ -23,6 +23,7 @@ export const ChordNoteSection = (props) => {
                     <div><p>{noteNumberToLetter(props.fifth, props.showAs)}</p></div>
                 </div>
             </div>
+            <p className='chordLabel'>{props.chordNumber + 1} Chord</p>
         </div>
     );
 };

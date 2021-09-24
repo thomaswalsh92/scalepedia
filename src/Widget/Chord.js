@@ -15,6 +15,7 @@ export const Chord = (props) => {
             root={props.root} 
             third={props.third}
             fifth={props.fifth}
+            chordNumber={props.chordNumber}
             />
         </div>
     )

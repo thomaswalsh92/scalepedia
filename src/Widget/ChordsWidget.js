@@ -27,6 +27,7 @@ export const ChordsWidget = (props) => {
             {chordsArr.map((chord, x) => (
             <Chord
             key={x} 
+            chordNumber={x}
             showAs={props.showAs}
             root={chord.root}
             third={chord.third}
