@@ -16,9 +16,11 @@ export const ChordKeyboard = (props) => {
     //All chords starting between C and E will be C block, F to B will be F block.
     if (props.root > 4) {
         keyboardStart = 5
-        keyboardLength = 19
     }
 
+    let rootPrinted = false;
+    let thirdPrinted = false;
+    let fifthPrinted = false;
     //below code loops according to props.length param, and initialises
     //an empty noteObject which will later be pushed into an array to
     //to be mapped into the keyboard component.
@@ -26,8 +28,7 @@ export const ChordKeyboard = (props) => {
         let noteObject = {
             isWhite: null,
             isRoot: false,
-            isThird: false,
-            isFifth: false,
+            isScaleNotRoot: false,
             noteNumber: null,
             gridCoords: {
                 gridColumnStart: '',
@@ -71,15 +72,21 @@ export const ChordKeyboard = (props) => {
         // this is the root and the isRoot property updated accordingly.
         // else if the match it's at any other index position, the 
         // isScaleNotRoot property updated accordingly. 
-
-/*         for (let j = 0; j < keyboardLength; j++) {
-            if ((i % 12) === props.root) {
+        
+        for (let j = 0; j < keyboardLength; j++) {
+            if ((((i + keyboardStart) % 12) === props.root) && !rootPrinted ) {
                 noteObject.isRoot = true
-            } 
-            else if ((i % 12) === props.third || props.fifth) {
+                rootPrinted = true
+            }  
+            else if ((((i + keyboardStart) % 12) === props.third) && !thirdPrinted && rootPrinted) {
                 noteObject.isScaleNotRoot = true
+                thirdPrinted = true
             } 
-        } */
+            else if ((((i + keyboardStart) % 12) === props.fifth) && !fifthPrinted && thirdPrinted) {
+                noteObject.isScaleNotRoot = true
+                fifthPrinted = true
+            } 
+        } 
         // each noteObject is pushed to the keyboardNotes array which
         // will be return as a keyboard note component using .map. The object 
         // properties will be used to correctly format these.
