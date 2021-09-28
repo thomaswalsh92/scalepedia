@@ -34,6 +34,15 @@ body {
   }
 }
 
+.app {
+  display: flex;
+}
+
+.margin {
+  background-color: black;
+  width: 20%;
+}
+
 .navBar {
   background-color: $lightPurple;
   display: flex;
@@ -66,6 +75,11 @@ body {
   overflow: auto;
 }
 
+.margin {
+  display: none;
+}
+
+
 // Widget specific styles
 
 .widget {
@@ -95,6 +109,7 @@ body {
   padding: 0.5rem;
   p {
     font-size: 1rem;
+    margin-left: 0.5rem;
   }
 
 }
@@ -102,9 +117,9 @@ body {
   display: flex;
   justify-content: right;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.6rem;
   select {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-right: 0.5rem;
     background-color: $midBlue;
     color: $lightBlue;
@@ -179,15 +194,27 @@ body {
 }
 
 .keyboardNoteHighlight {
-  width: 0.8rem;
   height: 0;
-  padding-bottom: 0.8rem;
   border-radius: 50%;
   margin: auto;
   margin-top: auto;
-  margin-bottom: 0.5rem;
   opacity: 100%;
-  
+}
+
+#scale {
+  .keyboardNoteHighlight {
+  width: 40%;
+  padding-bottom: 40%;
+  margin-bottom: 0.7rem;
+  }
+}
+
+#chords {
+  .keyboardNoteHighlight {
+  width: 50%;
+  padding-bottom: 50%;
+  margin-bottom: 0.5rem;
+  }
 }
 
 .noteSection {
@@ -260,13 +287,14 @@ body {
 .chord .keyboard {
   width: 60%;
   grid-template-columns: repeat(60, 1fr) ;
-  height: 5.5rem;
+  height: 5rem;
   margin: 0 0 0 0;
+  max-width: 250px;
 }
 
 .chord .noteSection {
   margin: 0 0 0 0; 
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 .chord .noteSectionTable {
@@ -310,3 +338,82 @@ body {
 }
 
 
+// responsive media queries
+
+//320px — 480px: Mobile devices.
+@media only screen and (max-width: 480px) {
+  .controlBarTitle {
+    p {
+      font-size: 0.8rem;
+    } 
+  }
+
+  .controlBarControls {
+    select {
+      font-size: 0.6rem;
+    }
+    label {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .controlBarTitle {
+    p {
+      font-size: 1rem;
+    }
+  
+  }
+  .controlBarControls {
+    select {
+      font-size: 1rem;
+    }
+
+    label {
+      font-size: 1rem;
+    }
+  }
+
+  .chord {
+    width: 350px;
+    margin-right: 0.5rem;
+  }
+
+  .chordContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #scale {
+    .keyboard {
+      grid-template-columns: repeat(124, 1fr) ;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .margin {
+    display: inline;
+    background-color: #2a2a36;
+    width: 20%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #scale {
+    .keyboardNoteHighlight {
+    width: 30%;
+    padding-bottom: 30%;
+    }
+  }
+}
+
+
+//481px — 768px: iPads, Tablets.
+//769px — 1024px: Small screens, laptops.
+//1025px — 1200px: Desktops, large screens.
+//1201px and more — Extra large screens, TV.

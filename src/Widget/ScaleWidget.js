@@ -3,10 +3,20 @@ import { ScaleKeyboard } from './ScaleKeyboard.js'
 import { ScaleNoteSection } from './ScaleNoteSection.js'
 import { noteNumberLookup } from '../utilities/noteNumberLookup.js';
 
+let keyboardLength = '24'
+
+
+let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+if (width >= 768) {
+    keyboardLength = '36'
+}
+
 
 
 export const ScaleWidget = (props) => {
     const noteNumbers = noteNumberLookup(props.rootNote, props.scaleIntervals)
+
     return (
         <div className='widget' id='scale'>
             <ControlBar 
@@ -21,7 +31,7 @@ export const ScaleWidget = (props) => {
             showAs={props.showAs}
             changeShowAs={props.changeShowAs} />
             <ScaleKeyboard 
-            length="24" 
+            length={keyboardLength} 
             noteNumbers={noteNumbers} 
             showAs={props.showAs}
             />

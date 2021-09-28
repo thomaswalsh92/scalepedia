@@ -24,6 +24,17 @@ body table {
   margin-bottom: 0.25rem;
 }
 
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.margin {
+  background-color: black;
+  width: 20%;
+}
+
 .navBar {
   background-color: #2a2a72;
   display: -webkit-box;
@@ -62,6 +73,10 @@ body table {
   overflow: auto;
 }
 
+.margin {
+  display: none;
+}
+
 .widget {
   background-color: #009FFD;
   border-radius: 1rem;
@@ -96,6 +111,7 @@ body table {
 
 .controlBarTitle p {
   font-size: 1rem;
+  margin-left: 0.5rem;
 }
 
 .controlBarControls {
@@ -106,11 +122,11 @@ body table {
       -ms-flex-pack: right;
           justify-content: right;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.6rem;
 }
 
 .controlBarControls select {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-right: 0.5rem;
   background-color: #009FFD;
   color: #eaf6ff;
@@ -208,14 +224,23 @@ body table {
 }
 
 .keyboardNoteHighlight {
-  width: 0.8rem;
   height: 0;
-  padding-bottom: 0.8rem;
   border-radius: 50%;
   margin: auto;
   margin-top: auto;
-  margin-bottom: 0.5rem;
   opacity: 100%;
+}
+
+#scale .keyboardNoteHighlight {
+  width: 40%;
+  padding-bottom: 40%;
+  margin-bottom: 0.7rem;
+}
+
+#chords .keyboardNoteHighlight {
+  width: 50%;
+  padding-bottom: 50%;
+  margin-bottom: 0.5rem;
 }
 
 .noteSection {
@@ -273,6 +298,65 @@ body table {
           box-sizing: border-box;
 }
 
+.rootNote {
+  background-color: #D34242;
+}
+
+.scaleNote {
+  background-color: #FFA400;
+}
+
+.chord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.chord .keyboard {
+  width: 60%;
+  -ms-grid-columns: (1fr)[60];
+      grid-template-columns: repeat(60, 1fr);
+  height: 5rem;
+  margin: 0 0 0 0;
+  max-width: 250px;
+}
+
+.chord .noteSection {
+  margin: 0 0 0 0;
+  margin-left: 1rem;
+}
+
+.chord .noteSectionTable {
+  margin: 0 0 0 0;
+  margin-right: 1rem;
+  padding: 0;
+}
+
+.chord .tableHeader {
+  margin: 0;
+}
+
+.chord p {
+  font-size: 1rem;
+  color: #0f0f2e;
+}
+
+.chord .chordLabel {
+  margin-top: 0.33rem;
+  margin-right: 2rem;
+  font-size: 0.8rem;
+}
+
 #chords .tableHeader {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
@@ -283,11 +367,73 @@ body table {
       grid-template-columns: repeat(3, 1fr);
 }
 
-.rootNote {
-  background-color: #D34242;
+.chord .rootNote {
+  width: 2rem;
 }
 
-.scaleNote {
-  background-color: #FFA400;
+.chord .scaleNote {
+  width: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .controlBarTitle p {
+    font-size: 0.8rem;
+  }
+  .controlBarControls select {
+    font-size: 0.6rem;
+  }
+  .controlBarControls label {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .controlBarTitle p {
+    font-size: 1rem;
+  }
+  .controlBarControls select {
+    font-size: 1rem;
+  }
+  .controlBarControls label {
+    font-size: 1rem;
+  }
+  .chord {
+    width: 350px;
+    margin-right: 0.5rem;
+  }
+  .chordContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #scale .keyboard {
+    -ms-grid-columns: (1fr)[124];
+        grid-template-columns: repeat(124, 1fr);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .margin {
+    display: inline;
+    background-color: #2a2a36;
+    width: 20%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #scale .keyboardNoteHighlight {
+    width: 30%;
+    padding-bottom: 30%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

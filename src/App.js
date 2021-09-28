@@ -37,32 +37,37 @@ function App() {
     setShowAs(newShowAs);
   }
 
-
   return (
     <div className='app'>
-      <NavBar />
-      <Hero />
-      <div className='main'>
-        <ScaleWidget 
-        rootNote={rootNote} 
-        changeRootNote={changeRootNote} 
-        scaleType={scaleType} 
-        changeScaleType={changeScaleType} 
-        scaleIntervals={scaleIntervals}
-        changeScaleIntervals={changeScaleIntervals}
-        showAs={showAs}
-        changeShowAs={changeShowAs}
-        />
-        <ChordsWidget 
-        rootNote={rootNote} 
-        changeRootNote={changeRootNote} 
-        scaleType={scaleType} 
-        changeScaleType={changeScaleType} 
-        scaleIntervals={scaleIntervals}
-        changeScaleIntervals={changeScaleIntervals}
-        showAs={showAs}
-        changeShowAs={changeShowAs}
-        />
+      <div className='margin'> 
+      </div>
+      <div className='contentContainer'>
+        <NavBar />
+        <Hero />
+        <div className='main'>
+          <ScaleWidget 
+          rootNote={rootNote} 
+          changeRootNote={changeRootNote} 
+          scaleType={scaleType} 
+          changeScaleType={changeScaleType} 
+          scaleIntervals={scaleIntervals}
+          changeScaleIntervals={changeScaleIntervals}
+          showAs={showAs}
+          changeShowAs={changeShowAs}
+          />
+          <ChordsWidget 
+          rootNote={rootNote} 
+          changeRootNote={changeRootNote} 
+          scaleType={scaleType} 
+          changeScaleType={changeScaleType} 
+          scaleIntervals={scaleIntervals}
+          changeScaleIntervals={changeScaleIntervals}
+          showAs={showAs}
+          changeShowAs={changeShowAs}
+          />
+        </div>
+      </div>
+      <div className='margin'>
       </div>
     </div>
   );

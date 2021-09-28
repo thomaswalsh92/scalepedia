@@ -24,6 +24,7 @@ export const ChordsWidget = (props) => {
             label={'Chords'}
             showControls={false}
             />
+            <div className='chordContainer'>
             {chordsArr.map((chord, x) => (
             <Chord
             key={x} 
@@ -33,6 +34,7 @@ export const ChordsWidget = (props) => {
             third={chord.third}
             fifth={chord.fifth}
             />))} 
+            </div>
         </div>
     );
 };
