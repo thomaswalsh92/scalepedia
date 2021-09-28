@@ -1,7 +1,7 @@
 
 import './fonts.css'
 import './App.scss';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { NavBar } from './NavBar/NavBar.js'
 import { Hero } from './Hero/Hero.js'
 import { ScaleWidget } from './Widget/ScaleWidget';
