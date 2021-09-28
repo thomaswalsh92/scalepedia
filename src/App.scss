@@ -340,7 +340,7 @@ body {
 
 // responsive media queries
 
-//320px — 480px: Mobile devices.
+
 @media only screen and (max-width: 480px) {
   .controlBarTitle {
     p {
@@ -356,6 +356,8 @@ body {
       font-size: 0.6rem;
     }
   }
+
+  
 }
 
 @media only screen and (min-width: 481px) {
@@ -389,7 +391,7 @@ body {
 
   #scale {
     .keyboard {
-      grid-template-columns: repeat(124, 1fr) ;
+      grid-template-columns: repeat(83, 1fr) ;
     }
   }
 }
@@ -400,6 +402,12 @@ body {
     background-color: #2a2a36;
     width: 20%;
     height: 100vh;
+  }
+
+  #scale {
+    .keyboard {
+      grid-template-columns: repeat(124, 1fr) ;
+    }
   }
 }
 
@@ -412,7 +420,7 @@ body {
   }
 }
 
-
+//320px — 480px: Mobile devices.
 //481px — 768px: iPads, Tablets.
 //769px — 1024px: Small screens, laptops.
 //1025px — 1200px: Desktops, large screens.
