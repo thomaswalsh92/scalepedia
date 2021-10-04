@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/scalepedia/static/css/main.a08de8af.chunk.css",
-    "main.js": "/scalepedia/static/js/main.059ff23f.chunk.js",
-    "main.js.map": "/scalepedia/static/js/main.059ff23f.chunk.js.map",
+    "main.css": "/scalepedia/static/css/main.3a1508fb.chunk.css",
+    "main.js": "/scalepedia/static/js/main.dda5204f.chunk.js",
+    "main.js.map": "/scalepedia/static/js/main.dda5204f.chunk.js.map",
     "runtime-main.js": "/scalepedia/static/js/runtime-main.830ce214.js",
     "runtime-main.js.map": "/scalepedia/static/js/runtime-main.830ce214.js.map",
     "static/js/2.4de46ff9.chunk.js": "/scalepedia/static/js/2.4de46ff9.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.ea059b14.chunk.js": "/scalepedia/static/js/3.ea059b14.chunk.js",
     "static/js/3.ea059b14.chunk.js.map": "/scalepedia/static/js/3.ea059b14.chunk.js.map",
     "index.html": "/scalepedia/index.html",
-    "static/css/main.a08de8af.chunk.css.map": "/scalepedia/static/css/main.a08de8af.chunk.css.map",
+    "static/css/main.3a1508fb.chunk.css.map": "/scalepedia/static/css/main.3a1508fb.chunk.css.map",
     "static/js/2.4de46ff9.chunk.js.LICENSE.txt": "/scalepedia/static/js/2.4de46ff9.chunk.js.LICENSE.txt",
     "static/media/fonts.css": "/scalepedia/static/media/zilla-slab-v6-latin-regular.f1d05384.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.830ce214.js",
     "static/js/2.4de46ff9.chunk.js",
-    "static/css/main.a08de8af.chunk.css",
-    "static/js/main.059ff23f.chunk.js"
+    "static/css/main.3a1508fb.chunk.css",
+    "static/js/main.dda5204f.chunk.js"
   ]
 }
