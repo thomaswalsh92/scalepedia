@@ -175,7 +175,7 @@ body table {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
-  height: 8rem;
+  height: 9rem;
 }
 
 .keyboardNoteWhite {
@@ -272,6 +272,7 @@ body table {
       grid-template-columns: repeat(7, 1fr);
   -webkit-column-gap: 2%;
           column-gap: 2%;
+  max-width: 450px;
 }
 
 .tableHeader div {
@@ -287,6 +288,7 @@ body table {
       grid-template-columns: repeat(7, 1fr);
   -webkit-column-gap: 2%;
           column-gap: 2%;
+  max-width: 450px;
 }
 
 .tableData div {
@@ -385,6 +387,9 @@ body table {
   .controlBarControls label {
     font-size: 0.6rem;
   }
+  .keyboard {
+    height: 7rem;
+  }
 }
 
 @media only screen and (min-width: 481px) {
@@ -398,7 +403,7 @@ body table {
     font-size: 1rem;
   }
   .chord {
-    width: 350px;
+    width: 320px;
     margin-right: 0.5rem;
   }
   .chordContainer {
@@ -411,13 +416,13 @@ body table {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   #scale .keyboard {
-    -ms-grid-columns: (1fr)[124];
-        grid-template-columns: repeat(124, 1fr);
+    -ms-grid-columns: (1fr)[83];
+        grid-template-columns: repeat(83, 1fr);
   }
 }
 
@@ -428,9 +433,17 @@ body table {
     width: 20%;
     height: 100vh;
   }
+  #scale .keyboard {
+    -ms-grid-columns: (1fr)[124];
+        grid-template-columns: repeat(124, 1fr);
+  }
 }
 
 @media only screen and (min-width: 1201px) {
+  #scale .keyboard {
+    -ms-grid-columns: (1fr)[166];
+        grid-template-columns: repeat(166, 1fr);
+  }
   #scale .keyboardNoteHighlight {
     width: 30%;
     padding-bottom: 30%;

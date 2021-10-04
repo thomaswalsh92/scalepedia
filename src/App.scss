@@ -161,7 +161,7 @@ body {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
-  height: 8rem;
+  height: 9rem;
 
 }
 
@@ -244,6 +244,7 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   column-gap: 2%;
+  max-width: 450px;
   div {
     border-radius: 0.25rem;
     height: 2rem;
@@ -255,6 +256,7 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   column-gap: 2%;
+  max-width: 450px;
   div {
     height: 2rem;
     width: 100%;
@@ -273,6 +275,7 @@ body {
 }
 
 //ChordWidget specific styles 
+
 
 .chord {
   display: flex;
@@ -357,7 +360,9 @@ body {
     }
   }
 
-  
+  .keyboard {
+    height: 7rem;
+  } 
 }
 
 @media only screen and (min-width: 481px) {
@@ -378,7 +383,7 @@ body {
   }
 
   .chord {
-    width: 350px;
+    width: 320px;
     margin-right: 0.5rem;
   }
 
@@ -386,7 +391,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   #scale {
@@ -413,6 +418,9 @@ body {
 
 @media only screen and (min-width: 1201px) {
   #scale {
+    .keyboard {
+      grid-template-columns: repeat(166, 1fr) ;
+    }
     .keyboardNoteHighlight {
     width: 30%;
     padding-bottom: 30%;

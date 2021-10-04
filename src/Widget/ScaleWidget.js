@@ -6,10 +6,15 @@ import { noteNumberLookup } from '../utilities/noteNumberLookup.js';
 let keyboardLength = '24'
 
 
+// eslint-disable-next-line no-restricted-globals
 let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 if (width >= 768) {
     keyboardLength = '36'
+}
+
+if (width >= 1201) {
+    keyboardLength = '48'
 }
 
 
