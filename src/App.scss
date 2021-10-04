@@ -102,6 +102,7 @@ body {
   overflow: auto;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
+  height: 2rem;
 }
 
 .controlBarTitle {
@@ -110,6 +111,9 @@ body {
   p {
     font-size: 1rem;
     margin-left: 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
   }
 
 }
@@ -119,7 +123,7 @@ body {
   text-align: center;
   padding: 0.6rem;
   select {
-    font-size: 1rem;
+    font-size: 0.6rem;
     margin-right: 0.5rem;
     background-color: $midBlue;
     color: $lightBlue;
@@ -139,7 +143,7 @@ body {
   
   padding: 0.5rem;
   select {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin-right: 0.5rem;
     background-color: $midBlue;
     color: $lightBlue;
@@ -347,14 +351,11 @@ body {
 @media only screen and (max-width: 480px) {
   .controlBarTitle {
     p {
-      font-size: 0.8rem;
+      font-size: 1rem;
     } 
   }
 
   .controlBarControls {
-    select {
-      font-size: 0.6rem;
-    }
     label {
       font-size: 0.6rem;
     }
@@ -367,17 +368,8 @@ body {
 
 @media only screen and (min-width: 481px) {
   .controlBarTitle {
+ 
     p {
-      font-size: 1rem;
-    }
-  
-  }
-  .controlBarControls {
-    select {
-      font-size: 1rem;
-    }
-
-    label {
       font-size: 1rem;
     }
   }
